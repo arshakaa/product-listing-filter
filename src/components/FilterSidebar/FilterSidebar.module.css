@@ -1,0 +1,188 @@
+.sidebar {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.35rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.clearButton {
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 1px solid #dc3545;
+    border-radius: 6px;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.clearButton:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.filterSection {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+.filterSection:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.filterTitle {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+}
+
+.select:hover {
+    border-color: #007bff;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.priceInputs {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.priceInput {
+    flex: 1;
+}
+
+.priceInput label {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.priceField {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.priceField:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.priceField:hover {
+    border-color: #007bff;
+}
+
+.ratingInput {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.ratingField {
+    width: 120px;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.ratingField:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.ratingField:hover {
+    border-color: #007bff;
+}
+
+.ratingHint {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.ratingPreview {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #ffc107;
+    letter-spacing: 2px;
+}
+
+.ratingError {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        padding: 1rem;
+    }
+
+    .priceInputs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .ratingInput {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ratingField {
+        width: 100%;
+    }
+}

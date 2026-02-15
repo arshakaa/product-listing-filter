@@ -1,0 +1,49 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.pageButton {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    min-width: 40px;
+}
+
+.pageButton:hover:not(:disabled) {
+    background: #f0f0f0;
+    border-color: #999;
+}
+
+.pageButton.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pageButton.active:hover {
+    background: #0056b3;
+}
+
+.pageButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pageButton.dots {
+    border: none;
+    cursor: default;
+}
+
+.pageButton.dots:hover {
+    background: none;
+}
